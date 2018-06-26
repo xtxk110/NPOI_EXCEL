@@ -12,3 +12,17 @@ F:\GitHub\NPOI.NET Excel\NpoiExcel\bin\Debug\NPOI.OOXML.dll
 F:\GitHub\NPOI.NET Excel\NpoiExcel\bin\Debug\NPOI.OpenXml4Net.dll
 F:\GitHub\NPOI.NET Excel\NpoiExcel\bin\Debug\NPOI.OpenXmlFormats.dll
 F:\GitHub\NPOI.NET Excel\NpoiExcel\bin\Debug\NPOI.xml
+F:\GitHub\NPOI_EXCEL\NpoiExcel\obj\Debug\Main.csprojResolveAssemblyReference.cache
+F:\GitHub\NPOI_EXCEL\NpoiExcel\obj\Debug\NpoiExcel.Properties.Resources.resources
+F:\GitHub\NPOI_EXCEL\NpoiExcel\obj\Debug\Main.csproj.GenerateResource.Cache
+F:\GitHub\NPOI_EXCEL\NpoiExcel\obj\Debug\Main.csproj.CoreCompileInputs.cache
+F:\GitHub\NPOI_EXCEL\NpoiExcel\obj\Debug\NpoiExcel.exe
+F:\GitHub\NPOI_EXCEL\NpoiExcel\obj\Debug\NpoiExcel.pdb
+F:\GitHub\NPOI_EXCEL\NpoiExcel\bin\Debug\NpoiExcel.exe
+F:\GitHub\NPOI_EXCEL\NpoiExcel\bin\Debug\NpoiExcel.pdb
+F:\GitHub\NPOI_EXCEL\NpoiExcel\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\GitHub\NPOI_EXCEL\NpoiExcel\bin\Debug\NPOI.dll
+F:\GitHub\NPOI_EXCEL\NpoiExcel\bin\Debug\NPOI.OOXML.dll
+F:\GitHub\NPOI_EXCEL\NpoiExcel\bin\Debug\NPOI.OpenXml4Net.dll
+F:\GitHub\NPOI_EXCEL\NpoiExcel\bin\Debug\NPOI.OpenXmlFormats.dll
+F:\GitHub\NPOI_EXCEL\NpoiExcel\bin\Debug\NPOI.xml
