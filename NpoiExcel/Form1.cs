@@ -31,8 +31,11 @@ namespace NpoiExcel
             dt.Rows.Add(dr);
 
             //NpoiHelper.GetInstance().ExportToExcel(dt);
-            NpoiHelper.GetInstance().ExportToExcel<TestData>(list);
+            //NpoiHelper.GetInstance().ExportToExcel<TestData>(list);
             //NpoiHelper.GetInstance().ExportToExcel<ComplexData>(list1);
+
+            string file = AppDomain.CurrentDomain.BaseDirectory + "excel.xls";
+            NpoiHelper.GetInstance().ImportFromExcel(file,"0",0);
         }
     }
 }
