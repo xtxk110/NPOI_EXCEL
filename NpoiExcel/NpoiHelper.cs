@@ -5,7 +5,7 @@ using System.Text;
 using NPOI.HSSF.UserModel;
 using NPOI.XSSF.UserModel;
 using NPOI.SS.UserModel;
-using NPOI.Util;
+using NPOI.SS.Util;
 using System.Data;
 using System.IO;
 using System.Reflection;
@@ -171,8 +171,10 @@ public class NpoiHelper
             ICell headerCell = headerRow.CreateCell(column.Ordinal);
             headerCell.SetCellValue(column.ColumnName);
             headerCell.CellStyle = headCellStyle;
-            list[0].SetColumnWidth(i, column.ColumnName.Length * 256 + 1);
+            //list[0].SetColumnWidth(i, column.ColumnName.Length * 256 + 1);
+            list[0].AutoSizeColumn(i);
         }
+        
         int rowIndex = list[0].LastRowNum+1;
         foreach (DataRow row in sourceTable.Rows)
         {
@@ -184,10 +186,10 @@ public class NpoiHelper
                 ICell cell = dataRow.CreateCell(column.Ordinal);
                 string value = (row[column] ?? "").ToString();
                 cell.SetCellValue(value);
-                int curWidth = sheet.GetColumnWidth(colIndex);
-                int newWidth = value.Length * 256 + 1;
-                if (curWidth < newWidth)
-                    sheet.SetColumnWidth(colIndex, newWidth);
+                //int curWidth = sheet.GetColumnWidth(colIndex);
+                //int newWidth = value.Length * 256 + 1;
+                //if (curWidth < newWidth)
+                //    sheet.SetColumnWidth(colIndex, newWidth);
                 colIndex++;
             }
 
