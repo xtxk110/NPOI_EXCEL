@@ -391,10 +391,10 @@ public class NpoiHelper
     /// 由Excel导入DataTable()(只针对单一表头)
     /// </summary>
     /// <param name="excelFileStream">Excel文件流</param>
-    /// <param name="sheetName">Excel工作表名称(可以工作表索引或名称)</param>
-    /// <param name="headerRowIndex">Excel表头行索引</param>
+    /// <param name="sheetName">Excel工作表名称(可以工作表索引或名称),默认第一张工作表</param>
+    /// <param name="headerRowIndex">Excel表头行索引,默认第一行</param>
     /// <returns>DataTable</returns>
-    public DataTable ImportFromExcel(Stream excelFileStream, string sheetName, int headerRowIndex)
+    public DataTable ImportFromExcel(Stream excelFileStream, string sheetName="0", int headerRowIndex=0)
     {
         IWorkbook workbook = CreateWorkbook(IsCompatible, excelFileStream);
         ISheet sheet = null;
@@ -421,10 +421,10 @@ public class NpoiHelper
     /// 由Excel导入DataTable(只针对单一表头)
     /// </summary>
     /// <param name="excelFilePath">Excel文件路径，为物理路径。</param>
-    /// <param name="sheetName">Excel工作表名称(可以工作表索引或名称)</param>
-    /// <param name="headerRowIndex">Excel表头行索引</param>
+    /// <param name="sheetName">Excel工作表名称(可以工作表索引或名称),默认第一张工作表</param>
+    /// <param name="headerRowIndex">Excel表头行索引,默认第一行</param>
     /// <returns>DataTable</returns>
-    public DataTable ImportFromExcel(string excelFilePath, string sheetName, int headerRowIndex)
+    public DataTable ImportFromExcel(string excelFilePath, string sheetName="0", int headerRowIndex=0)
     {
         using (FileStream stream = System.IO.File.OpenRead(excelFilePath))
         {
@@ -436,10 +436,10 @@ public class NpoiHelper
     /// 由Excel导入DataSet，如果有多个工作表，则导入多个DataTable(只针对单一表头)
     /// </summary>
     /// <param name="excelFileStream">Excel文件流</param>
-    /// <param name="headerRowIndex">Excel表头行索引</param>
+    /// <param name="headerRowIndex">Excel表头行索引,默认第一行</param>
     /// <param name="isCompatible">是否为兼容模式</param>
     /// <returns>DataSet</returns>
-    public DataSet ImportFromExcel(Stream excelFileStream, int headerRowIndex)
+    public DataSet ImportFromExcel(Stream excelFileStream, int headerRowIndex=0)
     {
         DataSet ds = new DataSet();
         IWorkbook workbook = CreateWorkbook(IsCompatible, excelFileStream);
@@ -460,9 +460,9 @@ public class NpoiHelper
     /// 由Excel导入DataSet，如果有多个工作表，则导入多个DataTable(只针对单一表头)
     /// </summary>
     /// <param name="excelFilePath">Excel文件路径，为物理路径。</param>
-    /// <param name="headerRowIndex">Excel表头行索引</param>
+    /// <param name="headerRowIndex">Excel表头行索引,默认第一行</param>
     /// <returns>DataSet</returns>
-    public DataSet ImportFromExcel(string excelFilePath, int headerRowIndex)
+    public DataSet ImportFromExcel(string excelFilePath, int headerRowIndex=0)
     {
         using (FileStream stream = System.IO.File.OpenRead(excelFilePath))
         {
